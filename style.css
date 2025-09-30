@@ -1,0 +1,100 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .game-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #00ffe1;
+      text-shadow: 0 0 5px #00ffe1;
+      margin-bottom: 20px;
+    }
+
+    #word {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #fff;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      text-align: center;
+    }
+
+    input::placeholder {
+      color: #bbb;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .info span {
+      font-weight: bold;
+      color: #00d9ff;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #00d9ff;
+      color: #000;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin: 10px 5px 0;
+    }
+
+    button:hover {
+      background: #00aacc;
+    }
+
+    #restartBtn {
+      background: #ff4d4d;
+      display: none;
+    }
+
+    #restartBtn:hover {
+      background: #cc0000;
+    }
+
+    #gameOverText {
+      margin-top: 15px;
+      font-size: 20px;
+      color: #ff4d4d;
+      font-weight: bold;
+      text-shadow: 0 0 5px red;
+    }

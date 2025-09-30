@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Master Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Typing Master</h1>
+    <div id="word">Click Start to Play</div>
+    <input type="text" id="input" placeholder="Type the word..." disabled autocomplete="off" />
+    <div class="info">
+      <div>Time: <span id="time">5</span>s</div>
+      <div>Score: <span id="score">0</span></div>
+    </div>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="restartBtn" onclick="startGame()">Restart</button>
+    <div id="gameOverText"></div>
+  </div>
+
+  <!-- Game Over Sound -->
+  <audio id="gameOverSound" src="http://pixabay.com/sound-effects/mario-grabish-14183/" preload="auto"></audio>
+  
+
+  <script src="./scrpit.js"></script>
+</body>
+</html>
